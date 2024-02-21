@@ -1,0 +1,22 @@
+hi.title{
+    text-align: center;
+    background-color: cadetblue;
+    box-shadow: 5px 5px 10px gray;
+    padding: 0.5em;
+    color: whitesmoke;
+}
+img.img, img.img2{
+    width: 45%;
+    margin: calc(9%/4);
+}
+img.img3, img.img4{
+    width: 500px;
+    margin: calc(9%/4);
+}
+img.img1{
+    border-radius: 20px;
+    border: solid 5px purple;
+}
+img.img2{
+    border-radius: 50px;
+}
