@@ -72,7 +72,7 @@ img.img2{
 }
 h2.containertitle, p.par1, p.par2, p.par3{
     position: absolute;
-    color: whitesmoke;
+    color: black;
 }
 h2.containertitle{
     text-align: center;
