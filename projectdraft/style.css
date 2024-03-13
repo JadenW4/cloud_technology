@@ -1,26 +1,49 @@
+body.bo{
+    background: url(images/dacity.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    
+}
+hr.hrhr{
+    width: 1900px;
+    height: 2px;
+    color: black;
+    fill: black;
+    background-color: black;
+}
+hr.hihi{
+    width: 1900px;
+    height: 2px;
+    color: black;
+    fill: black;
+    background-color: black;
+}
 h1.title{
-    color: aquamarine;
+    color:blue;
     font: bolder;
     font-style: oblique;
     text-shadow: 5px 5px 10px;
     text-align: center;
     box-shadow: 2px 2px 5px;
-    border-radius: 5px;
-    background-color: salmon;
+    border-radius: 100%;
+    background-color: salmon;;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 p.intro{
     font: bold;
     color: black;
-    font-size: medium;
+    font-size: large;
     text-align: center;
     margin-top: 5cm;
     box-shadow: 2px 2px 5px;
     background-color: lightslategray;
-    border-radius: 5px;
+    border-radius: 3px;
+   
 }
 /*----- CARDS -----*/
 main.maincontainer{
-    background-color: white;
+    background-color:none;
     width: 80%;
     height: 80%;
     margin: 10%;
@@ -54,7 +77,7 @@ a.cardlink{
     text-align: center;
 }
 main.maincontainer2{
-    background-color: white;
+    background-color: none;
     width: 80%;
     height: 90%;
     margin: 10%;
@@ -157,7 +180,7 @@ h1.moreinfo{
     background-color: salmon;
 }
 main.maincontainer20{
-    background-color: white;
+    background-color: none;
     width: 80%;
     height: 80%;
     margin: 10%;
@@ -184,12 +207,10 @@ div.cardinfo20{
 }    
 
 p.par{
-    font-size: large;
+    font-size:medium;
     font-weight: bold;
     color: black;
-    background-color: gray;
-    border-radius: 2px 2px 5px;
-    box-shadow: 5px 5px 5px;
+    background-color: lightgray;
     text-align:justify
 }
 /* ----- BREAKPOINT = 1700PX ----- */
@@ -222,7 +243,7 @@ p.par{
 
 }   
 main.maincontainer200{
-    background-color: white;
+    background-color: none;
     width: 80%;
     height: 90%;
     margin: 10%;
@@ -245,7 +266,8 @@ div.cardinfo200{
     background-color: lightgrey;
     padding: 1em;
     height: 50%;
-    font-style: oblique;   
+    font-style: oblique;
+    font: bold;   
 }
 a.cardlink200{
     display: inline-block;
@@ -282,4 +304,75 @@ a.cardlink200{
     main.maincontainer200{background-color: lightskyblue ;}
     section.card200{width: 400px; margin: 2em;}
     img.imgcard200{height:60%;}
+}
+body.bodi{
+    background: url(images/citi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+table{
+        border: 1px solid;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       width: 50%;
+       font: bold;
+       background-color: white;
+       
+}
+ th{
+    border: 1px solid;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       width: 50%;
+       font: bold;
+       background-color: lightgrey;
+}
+td{
+    border: 1px solid;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       width: 50%;
+       font: bold;
+       background-color: lightblue;
+}
+a.ez{
+    Font: bold;
+    font-size: medium;
+    color: slateblue;
+    box-shadow: 3px 3px 5px;
+    border-radius: 2px 2px 4px;
+    background-color: lightseagreen;
+    padding: 1em 2em;
+    text-align: center;
+}
+a.ez{
+    Font: bold;
+    font-size: medium;
+    color: slateblue;
+    box-shadow: 3px 3px 5px;
+    border-radius: 2px 2px 4px;
+    background-color: lightseagreen;
+    padding: 1em 2em;
+    text-align: center;
+}a.ez:hover {
+    transition-duration: 2000ms;
+    transform-style: initial;
+    transform-origin: 5%;
+    transform-box: 2px 2px 2px;
+    padding-left: 2cm;
+    color: rgb(255, 94, 0);
+    background-color: rgb(209, 169, 38);
+}
+h1.titl{
+    color: darkmagenta;
+    font: bolder;
+    font-style: oblique;
+    text-shadow: 5px 5px 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px;
+    border-radius: 100%;
+    background-color: lightskyblue;
 }
