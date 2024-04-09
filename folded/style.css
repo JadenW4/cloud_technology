@@ -1,0 +1,22 @@
+h1.mid{
+    font-style: oblique;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-style: double;
+    border-color: aqua;
+    background-color: blue;
+}
+
+body.dug{
+    background: url(image/product.png);
+    background-repeat: no-repeat;
+    background-size:cover;   
+}
+P.ping{
+    font-size: large;
+    font-style: unset;
+    border-style: dotted;
+    background-color: teal;
+    background-color: transparent;
+}
