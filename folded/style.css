@@ -1,0 +1,42 @@
+h1.mid{
+    font-style: oblique;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-style: double;
+    border-color: rgb(173, 66, 102);
+    background-color: rgb(148, 0, 44);
+}
+
+body.dug{
+    background: url(product.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    animation: normal;
+    animation-delay: 3s;
+    animation-play-state: running;
+}
+P.ping{
+    font-size: large;
+    font-style: oblique;
+    border-style: dotted;
+    background-color: rgb(51, 4, 33);
+    border-color: blueviolet;
+    width: 40%;
+    height: 60%;
+    box-shadow: 3px 3px 3px;
+    font-weight: bolder;
+    border-radius: 100px 100px 100px;
+    box-sizing: 100px 100px 100px;
+    border: solid;
+    text-align: center;
+    margin: auto;
+    margin-top: 300px;
+}
+p.ping:hover{
+    transform-style:flat;
+    color: rgb(134, 70, 70);
+    transform-box:border-box 150px 150px 150px;
+    transform:scale(1.25);
+    transition-duration: 2s;
+}
