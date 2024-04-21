@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hair supply</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BEST DISCOUNT HAIR SUPPLIES!</h1>
+            <h1 class = sham>Shampoo</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Products</a>
+                    <div class="dropdown-content">
+                        <a href="oilspage.html">Oils</a>
+                        <a href="shampoopage.html">Shampoos</a>
+                        <a href="conditionerpage.html">conditioners</a>
+                    </div>
+                </li>
+                <li><a href="draft2.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Socials</a>
+                    <div class="dropdown-content">
+                        <a href="https://twitter.com/home" target = "_blank">Twitter</a>
+                        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                        <a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a>
+
+                    </div>
+                </li>
+                <li><a href="#" onclick="openCart()">Cart</a></li> <!-- Modified cart link to open cart -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product" >
+            <img src="images/rich.webp" alt="rich" class="product-image" style="width: 100px; height: auto;">
+            <h2>Rich Shampoo</h2>
+            <p>Amazing at cleansing your scalp!</p>
+            <p>Price: $19.50</p>
+            <p class="Sale">Out of stock</p>
+            <button class="add-to-cart-btn" onclick="addToCart('rich', 19.50)">Add to Cart</button>
+        </section>
+    
+        <section class="product">
+            <img src="images/pantene.webp" alt="pantene" class="product-image" style="width: 100px; height: auto;">
+            <h2>Pantene shampoo</h2>
+            <p>Cleanses and repairs hair and scalp!</p>
+            <p>Price: $20.99</p>
+            <p class="Sale"></p>
+            <button class="add-to-cart-btn" onclick="addToCart('pantene', 20.99)">Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="images/bompo.webp" alt="hair mask" class="product-image" style="width: 100px; height: auto;">
+            <h2>bompo</h2>
+            <p>Top of the line cleansing and texture!</p>
+            <p>Price: $17.99</p>
+            <p class="Sale"></p>
+            <button class="add-to-cart-btn" onclick="addToCart('bompo', 17.99)">Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="images/headshoulder.jpg" alt="Shampoo" class="product-image" style="width: 100px; height: auto;">
+            <h2>Head and shoulders shampoo</h2>
+            <p>Great for skin care and acne treatment!</p>
+            <p>Price: $15.00</p>
+            <p class="Sale">50% OFF!</p>
+            <button class="add-to-cart-btn" onclick="addToCart('headshoulder', 15.00)">Add to Cart</button>
+        </section>
+        <!-- Add more products here -->
+    </main>
+
+    <footer>
+        <p>&copy; Best Discount Hair Supplies</p>
+    </footer>
+
+ <!-- Cart Modal -->
+<div id="overlay"></div>
+<div id="modal">
+    <span class="close" onclick="closeCart()">&times;</span>
+    <h2>Cart</h2>
+    <div id="cart-items">
+        <!-- Cart items will be displayed here -->
+    </div>
+    <!-- Total Price -->
+    <div id="total-price">
+        <h3>Total Price: $<span id="totalAmount">0.00</span></h3>
+    </div>
+    <!-- Checkout form -->
+    <div id="checkout-info">
+        <form id="payment-form">
+            <label for="name">Name on card:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="card-number">Card Number:</label><br>
+            <input type="text" id="card-number" name="card-number" required><br>
+            <label for="expiry">Expiration Date:</label><br>
+            <input type="text" id="expiry" name="expiry" required><br>
+            <label for="CVV">CVV:</label><br>
+            <input type="text" id="CVV" name="CVV" required><br>
+            <button type="submit" class="checkout-btn">Submit Payment</button>
+        </form>
+    </div>
+</div>
+
+<script src="checkout.js" defer></script>
+<script>
+    let cartTotal = 0; // Initialize cart total variable
+    let cartItems = []; // Initialize cart items array
+
+    // Function to open cart modal
+    function openCart() {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('modal').style.display = 'block';
+        displayCartItems(); // Display cart items when cart is opened
+    }
+
+    // Function to close cart modal
+    function closeCart() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('modal').style.display = 'none';
+    }
+
+    // Function to add item to cart
+    function addToCart(productName, price) {
+        // Add item to cart items array
+        cartItems.push({ productName, price });
+        
+        // Update cart total
+        cartTotal += price;
+        
+        // Update total price display
+        document.getElementById('totalAmount').textContent = cartTotal.toFixed(2);
+        
+        // Display cart items
+        displayCartItems();
+    }
+
+    // Function to display cart items
+    function displayCartItems() {
+        const cartItemsDiv = document.getElementById('cart-items');
+        cartItemsDiv.innerHTML = ''; // Clear previous items
+
+        cartItems.forEach(item => {
+            const itemDiv = document.createElement('div');
+            itemDiv.textContent = `${item.productName} - $${item.price.toFixed(2)}`;
+            cartItemsDiv.appendChild(itemDiv);
+        });
+    }
+</script>
+
+
+</body>
+</html>
