@@ -1,0 +1,59 @@
+/* Custom CSS for the portfolio website */
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #d62c3a;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #343a40 !important;
+    border-bottom: 2px solid #343a40 !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #17a2b8 !important;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px 0;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Section Titles */
+h2 {
+    color: #343a40;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #d62c3a;
+    color: #fff;
+    text-align: center;
+    border-top: 2px solid #d62c3a;
+}
